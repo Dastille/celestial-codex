@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Celestial Codex — compiling the guide.">
+  <meta name="color-scheme" content="dark">
+  <title>Celestial Codex</title>
+  <style>
+    :root {
+      --bg: #071422;
+      --ink: #e8f4f0;
+      --guide: #5ef0c8;
+      --parchment: #f0d9a8;
+      --muted: #8fb0a8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      font-family: "Georgia", "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse 50% 40% at 50% 0%, rgba(94, 240, 200, 0.12) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 35% at 10% 90%, rgba(240, 217, 168, 0.08) 0%, transparent 50%),
+        linear-gradient(180deg, #0a1a2e 0%, var(--bg) 100%);
+      text-align: center;
+      padding: 2rem;
+    }
+    main { max-width: 30rem; }
+    .glyph {
+      font-size: 2.5rem;
+      color: var(--guide);
+      margin-bottom: 1rem;
+      line-height: 1;
+      text-shadow: 0 0 24px rgba(94, 240, 200, 0.5);
+    }
+    h1 {
+      font-size: clamp(1.85rem, 5.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.85rem;
+      color: var(--parchment);
+    }
+    .status {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--guide);
+      margin-bottom: 1.2rem;
+    }
+    .status::before { content: "◈ "; }
+    .status::after { content: " ◈"; }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.55;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .domains {
+      margin-top: 2rem;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      font-style: normal;
+      font-size: 0.85rem;
+      color: rgba(143, 176, 168, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="glyph" aria-hidden="true">☰</div>
+    <h1>Celestial Codex</h1>
+    <p class="status">Compiling the guide</p>
+    <p>Don't panic — the index is still writing itself.</p>
+    <p class="domains">celestialcodex.com · celestialcodex.space</p>
+  </main>
+</body>
+</html>
